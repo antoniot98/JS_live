@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_TOUR</title>
+</head>
+<body>
+
+<!--<script>-->
+<!--    /* Esercizio 4: Conta il tempo */-->
+
+
+<!--    var ore, minuti, secondi;-->
+
+<!--    var inputSeconds = 3661;-->
+<!--    var secondsInAnHour = 60 * 60;-->
+<!--    var secondInAnMinute = 60;-->
+
+<!--    ore = Math.floor(inputSeconds / secondsInAnHour);-->
+<!--    var restoSecondi = inputSeconds % secondsInAnHour;-->
+<!--    minuti = Math.floor(restoSecondi / secondInAnMinute);-->
+<!--    secondi = restoSecondi % secondInAnMinute;-->
+
+
+<!--    var result = ore + " or" + (ore === 1 ? "a " : "e ") +-->
+<!--        minuti + " minut" + (minuti === 1 ? "o " : "i ") +-->
+<!--        secondi + " second" + (secondi === 1 ? "o " : "i ");-->
+<!--    console.log(result);-->
+
+
+<!--</script>-->
+<!--<script>-->
+<!--    var color = "bianco";-->
+<!--    switch (color) {-->
+<!--        case "red":-->
+<!--            message = "stop";-->
+<!--            break;-->
+<!--        case "yellow":-->
+<!--        case "purple":-->
+<!--        case "magenta":-->
+<!--        case "blue":-->
+<!--        case "black":-->
+<!--            message = "alert";-->
+<!--            break;-->
+<!--        case "green":-->
+<!--            message = "go";-->
+<!--            break;-->
+<!--        default:-->
+<!--            throw Error("Colore non gestito");-->
+<!--    }-->
+<!--    console.log(message);-->
+<!--</script>-->
+<!--<script>-->
+<!--    var counter = 0;-->
+<!--    do {-->
+<!--        console.log("I'm waiting");-->
+<!--        counter++;-->
+<!--    }-->
+<!--    while (counter <= 10);-->
+<!--    /* Normal for*/-->
+<!--    for (var i = 0; i < 10; i++) {-->
+<!--        console.log("I'm waiting dal for");-->
+<!--        counter++;-->
+<!--    }-->
+
+<!--    // For of used with array-->
+<!--    var arr = [1, 2, 3, 4, 5];-->
+<!--    for (var d of arr) {-->
+<!--        console.log("I'm waiting for of " + d);-->
+<!--    }-->
+
+<!--    // For in used with object-->
+<!--    var obj = {a: 0, b: 1, c: 2}-->
+<!--    for (var d in obj) {-->
+<!--        console.log(d);-->
+<!--        console.log("I'm waiting for in " + obj[d]);-->
+<!--    }-->
+
+<!--</script>-->
+<!--<script>-->
+<!--    /*Esecizio Caldo o Freddo */-->
+
+
+<!--    var a = -2;-->
+<!--    var b = -1;-->
+<!--    var c = -1;-->
+<!--    var caldo = 0;-->
+<!--    var freddo = 0;-->
+
+
+<!--    if (a >= b && a >= c) {-->
+
+<!--        caldo = a;-->
+<!--        freddo = b < c ? b : c;-->
+<!--    } else if (b >= a && b >= c) {-->
+<!--        caldo = b;-->
+<!--        freddo = a < c ? a : c;-->
+<!--    } else {-->
+<!--        caldo = c;-->
+<!--        freddo = b < a ? b : a;-->
+<!--    }-->
+
+
+<!--    var result = "giornata più clada = " + caldo + ", giornata più fredda =  " + freddo;-->
+<!--    console.log(result);-->
+<!--</script>-->
+<!--<script>-->
+<!--    /* Esercizio Il conta cifre-->
+<!--    Scrivi un programma che dato un numero (massimo 9999) conti da quante cifre è formato.-->
+
+<!--    Esempi:-->
+
+<!--    Input: numero = 9-->
+<!--    Output: 1 cifra-->
+<!--    Input numero = 245-->
+<!--    Output: 3 cifre-->
+<!--     */-->
+
+<!--    var numero = "1000";-->
+
+<!--    if (numero.length <= 4) {-->
+<!--        var cifre = numero.length;-->
+<!--        console.log("Il numero è composto da: " + cifre + " cifre");-->
+<!--    } else {-->
+<!--        console.log("Il numero supera il valore max di 9999");-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--<script>-->
+<!--    /* Fai il professore-->
+<!--       Scrivi un programma che converta un voto numerico (v) in un giudizio seguendo questi parametri:-->
+
+<!--       v<18: insufficiente-->
+<!--       18 <= v < 21: sufficiente-->
+<!--       21 <= v < 24: buono-->
+<!--       24 <= v < 27: distinto-->
+<!--       27 <= v <= 29: ottimo-->
+<!--       v= 30: eccellente-->
+
+<!--   */-->
+
+<!--    var v = 30;-->
+<!--    var giudizio;-->
+
+<!--    if (v<18){-->
+<!--        giudizio="Insufficiente";-->
+<!--    }-->
+<!--    else if(v>=18 && v<21)-->
+<!--    {-->
+<!--        giudizio="Sufficiente";-->
+<!--    }-->
+<!--    else if(v>=21 && v<24)-->
+<!--    {-->
+<!--        giudizio="Buono";-->
+<!--    }-->
+<!--    else if(v>=24 && v<27)-->
+<!--    {-->
+<!--        giudizio="Distinto";-->
+<!--    }-->
+<!--    else if(v>=27 && v<=29)-->
+<!--    {-->
+<!--        giudizio="Ottimo";-->
+<!--    }-->
+<!--    else if(v===30){-->
+<!--        giudizio="Eccellente";-->
+<!--    }-->
+
+
+<!--    console.log("Promosso con giudizio: " + giudizio);-->
+<!--</script>-->
+<!--<script>-->
+<!--    function Car (name, manufacturer){-->
+<!--        this.name=name;-->
+<!--        this.manufacturer=manufacturer;-->
+
+<!--        this.toString = function(){-->
+<!--            return name + " , " + manufacturer;-->
+<!--        }-->
+<!--    }-->
+<!--    var car2= {-->
+<!--        name: "Fiesta", manufacturer:"Ford"-->
+<!--    }-->
+<!--    var car3= {-->
+<!--        name: "Focus", manufacturer:"Ford"-->
+<!--    }-->
+<!--    var car1=new Car("Yaris", "Toyota");-->
+<!--</script>-->
+
+
+<script src="assets/js/convertitore.js"></script>
+
+</body>
+</html>

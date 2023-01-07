@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+</head>
+<body>
+
+
+<script>
+    class Card {
+        constructor(face, suit) {
+            this.face = getFace(face);
+            this.suit = getSuit(suit);
+
+
+            function getFace(face) {
+                if ((face < 0 || face > 9) || !Number.isInteger(face)) {
+                    throw new Error("Argument out of range");
+                } else if (face === 0) {
+                    return "Asso";
+                } else if (face === 10) {
+                    return "Re";
+                } else {
+                    return (face + 1).toString();
+                }
+
+
+            }
+
+
+            function getSuit(suit) {
+
+                switch (suit) {
+                    case 0:
+                        return "Cuori";
+                    case 1:
+                        return "Fiori";
+                    case 2:
+                        return "Quadri";
+                    case 3:
+                        return "Picche";
+                    default:
+                        throw new Error("Argument out of range");
+
+                }
+            }
+
+
+        }
+    }
+
+    class CardDeck {
+        constructor() {
+
+        }
+
+        shuffle() {
+
+            var face = Math.round(Math.random() * 9);
+            var suit = Math.round(Math.random() * 3);
+
+            return new Card(face, suit);
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

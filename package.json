@@ -1,0 +1,14 @@
+{
+  "name": "js_live",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antonio tessitore",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
+}
