@@ -33,11 +33,18 @@
 </script>
 
 <script>
+
     const button=document.getElementById("copy-btn");
+    const textArea = document.getElementById("copy-text");
 
     button.addEventListener("click",() => {
-        const text = document.getElementById("copy-text").value;
-        if(text) window.alert(text);
+        if(textArea instanceof HTMLTextAreaElement){
+            const text = textArea.value;
+            if(text) navigator.clipboard.writeText(text);
+            textArea.value = '';
+        }
+
+
     } )
 </script>
 </body>
